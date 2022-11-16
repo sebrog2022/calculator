@@ -90,7 +90,7 @@ switch(operator) {
 
 }
 addToHistory();
-historyBtn.classList.add('acticve');
+historyBtn.classList.add('active');
 currentNumber.innerHTML = result;
 previousNumber.innerHTML = '';
 mathSign.innerHTML = '';
@@ -108,16 +108,20 @@ calculatorHistory.appendChild(newHistoryItem);
 
 }
 
-
+function clearHistory () {
+    calculatorHistory.textContent = '';
+    if(calculatorHistory.textContent === '') {
+        historyBtn.classList.remove('active');
+    }
+}
 
 
 function clearScreen () {
 
-}
-
-function clearHisotry () {
-
-
+    result = '';
+    currentNumber.innerHTML = '';
+    previousNumber.innerHTML = '';
+    mathSign.innerHTML = '';
 }
 
 
