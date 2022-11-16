@@ -17,7 +17,7 @@ const clearButton = document.querySelector('.clear');
 
 const calculatorHistory = document.querySelector('.history');
 
-const historyBtn = document.querySelector ('.history-btn');
+const historyBtn = document.querySelector('.history-btn');
 
 let result = '';
 
@@ -77,14 +77,14 @@ function clearHisotry () {
 
 // nasłuchiwanie przycisków
 
-operatorsButtons.forEach((button) => button.addEventListener('click', operate))
+operatorsButtons.forEach((button) => button.addEventListener('click', operate));
 
 equalsButton.addEventListener('click', showResult);
 
 clearButton.addEventListener('click', clearScreen);
 
 numbersButtons.forEach((button) => {
-    button.addEventListener('click', clearHistory);
+    button.addEventListener('click', displayNumbers)
 })
 
-historyBtn.addEventListener('click', clearHisotry);
+historyBtn.addEventListener('click', clearHistory);
