@@ -1,12 +1,12 @@
 const currentNumber = document.querySelector('.currentNumber');
 
-const previousNumber = document.querySelector('.previousNumber');
+const previousNumber = document.querySelector('.previousNumber p');
 
 const mathSign = document.querySelector('.mathSign');
 
-const numbersButtons = document.querySelector('.number');
+const numbersButtons = document.querySelectorAll('.number');
 
-const operatorsButtons = document.querySelector('.operator');
+const operatorsButtons = document.querySelectoAll('.operator');
 
 
 const equalsButton = document.querySelector('.equals');
@@ -34,12 +34,14 @@ let result = '';
 
 
 
-function displayNumbers () {
+function displayNumbers (){
+
+
 
    if(this.textContent === '.' && currentNumber.innerHTML.includes('.')) return;
-   if(this.textContent === '.' && currentNumber.innerHTML === '') return
-   currentNumber.innerHTML = '.0'
-currentNumber.innerHTML =+ this.textContent;
+   if(this.textContent === '.' && currentNumber.innerHTML === '') return currentNumber.innerHTML = '.0'
+
+currentNumber.innerHTML += this.textContent;
 }
 
 function operate () {
@@ -77,7 +79,7 @@ function clearHisotry () {
 
 // nasłuchiwanie przycisków
 
-operatorsButtons.forEach((button) => button.addEventListener('click', operate));
+operatorsButtons.forEach((button) => button.addEventListener('click', operate))
 
 equalsButton.addEventListener('click', showResult);
 
