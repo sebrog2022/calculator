@@ -51,6 +51,7 @@ body {
 
 .mathSign {
     font-size: 22px;
+    color: white;
 
 }
 
@@ -60,6 +61,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 2px;
+    color: white;
 
 }
 
@@ -119,4 +121,12 @@ button:hover {
 
 .history-btn.active {
     display: block;
+}
+
+
+.history-item {
+    margin: 8px 0px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(29, 27, 27, 0.233);
+    padding-bottom: 5px;
 }
