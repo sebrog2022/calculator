@@ -12,7 +12,7 @@ html {
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(to right bottom, #e4a7db, #d245db, #a22dce, #7d3ac5, #4d56bd);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,119,0.7175245098039216) 35%, rgba(0,212,255,1) 100%);
     display: flex;
     justify-content: center;
     align-items:  center;
